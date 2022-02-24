@@ -75,6 +75,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
 	{ MODKEY,			XK_w,	   spawn,	   SHCMD("firefox") },
 	{ MODKEY|ShiftMask,		XK_r,	   spawn,	   SHCMD(TERMINAL " -e htop") },
+	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD(TERMINAL " -e pulsemixer") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("~/wpchange.sh") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
