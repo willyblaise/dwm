@@ -67,12 +67,15 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { TERMINAL, NULL };
 static const char *roficmd[]  = { "rofi", "-show", "run", NULL };
 static const char *roficmdssh[]  = { "rofi", "-show", "ssh", NULL };
+static const char scratchpadname[] = "scratchpad";
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
 //static const char *chgpiccmd[]  = { "feh", "--bg-scale", "/home/champ/wallpapers/*", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,             		XK_grave,  spawn,          {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_s,      spawn,          {.v = roficmdssh } },
 	{ MODKEY,			XK_w,	   spawn,	   SHCMD("firefox") },
