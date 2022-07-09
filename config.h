@@ -83,6 +83,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_p,	   spawn,	   SHCMD(TERMINAL " -e pulsemixer") },
 	{ Mod4Mask,      		XK_c,	   spawn,	   SHCMD(TERMINAL " -e bc -il") },
 	{ Mod4Mask,      		XK_n,	   spawn,	   SHCMD(TERMINAL " -e nnn") },
+	{ Mod4Mask,      		XK_m,	   spawn,	   SHCMD(TERMINAL " -e mocp") },
+	{ Mod4Mask,      		XK_b,	   spawn,	   SHCMD(TERMINAL " -e btop") },
 	{ MODKEY,                       XK_v,      spawn,          SHCMD("~/wpchange.sh") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
